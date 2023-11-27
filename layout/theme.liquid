@@ -6,7 +6,8 @@
 </head>
 
 <body>
-  {{ content_for_layou }}
+  {% render 'header' %}
+  {{ content_for_layout }}
 
   {{ 'scipts.js' | asset_url | script_tag }}
 </body>
